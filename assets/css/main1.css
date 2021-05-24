@@ -33,7 +33,7 @@ h5{
 h6{
   color: rgb(144, 20, 20);
   font-size: 16px;
-  text-align: center;
+  /* text-align: center; */
 }
 
 .head1{
@@ -84,7 +84,18 @@ ul li, ol li {
 }
 
 a:not([href]):not([tabindex]) {
-  color: #fff;
+  color: #000000;
+}
+
+#btn_collapse1, #btn_collapse2,#btn_collapse3,#btn_collapse4,#btn_collapse5,#btn_collapse6,#btn_collapse7,#btn_collapse8{
+  background-color: white !important;
+  border: none !important;
+  padding: 0%;
+  margin: 0%;
+}
+
+.collapse{
+  padding-left: 5%;
 }
 
 .section-header {
@@ -822,7 +833,7 @@ hr {
 
 /* Intro Image */
 .intro-img {
-   background-image: url(../../images/homepage/Picture2.png);
+   background-image: url(../../images/transport/faq_background.png);
 }
 
 /* Team Item */
@@ -1330,6 +1341,10 @@ textarea {
   background: #fff;
 }
 
+#footer{
+  background-color: #f79847;
+}
+
 .footer-area .footer-titel {
   font-size: 18px;
   color: #333333;
@@ -1421,16 +1436,20 @@ textarea {
   color: #F63854;
 }
 
+label{
+  color: #000000;
+}
+
 .social-icon i {
-  color: #272727;
-  background: #fff;
-  width: 32px;
+  color: black;
+  background: transparent;
+  /* width: 32px;
   height: 32px;
   line-height: 34px;
   display: inline-block;
   text-align: right;
   border-radius: 4px;
-  font-size: 26px;
+  font-size: 26px; */
  /*  margin: 15px 6px 12px 4px; */
   transition: all 0.3s ease-in-out 0s;
   -moz-transition: all 0.3s ease-in-out 0s;
@@ -1438,38 +1457,26 @@ textarea {
   -o-transition: all 0.3s ease-in-out 0s;
 }
 
-.social-icon i:hover {
-  color:  #4A9CEC !important;
-}
 
-.social-icon .facebook:hover {
-  background: #3b5999;
-  font-size: 27px;
-}
-
-.social-icon .twitter:hover {
-  background: #4A9CEC;
-}
-
-.social-icon .instagram:hover {
-  background: #D6274D;
-}
-
-.social-icon .linkedin:hover {
-  background: #1260A2;
-}
-
-.social-icon .google:hover {
-  background: #CE332A;
-}
 
 /* transport page */
 #hero-area1  {
-  background-image: url(../../images/transport/Picture1.png);
+  background-image: url(../../images/transport/faq_background.png);
   /* margin-left: 5%; */
   margin-top: 100px;
  /*  margin-right: 5%; */
   margin-bottom: 100px;
+  /* position: relative; */
+  padding: 262px 0 40px;
+}
+
+.layer {
+  background-color: rgba(49, 137, 196, 0.7);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
 
 #intro-img1{
@@ -1493,7 +1500,10 @@ textarea {
 @media screen and (max-width: 600px){
   #hero-area1.hero-area-bg{
     background-image: none;
-    margin-top: 0px;
+    margin-top: 40px;
+  }
+  #img_area{
+    width: 25%;
   }
 
   #hero-area1 {
@@ -1503,14 +1513,25 @@ textarea {
 
   .contents{
     padding: 5px;
+    text-align: center;
   }
   #hero-area3  {
-    background-image: url(../../images/transport/Picture1.png);
+    background-image: url(../../images/transport/faq_background.png);
     /* margin-left: 5%; */
   /*  margin-right: 5%; */
     margin-bottom: 50px;
     padding: 5px;
   }
+
+  .hero-area-bg .layer{
+    background-color: rgba(49, 137, 196, 0.7) !important;
+    position: absolute !important;
+    background-size: contain !important;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
 
   #intro-img {
     margin-bottom: 50px;
@@ -1539,15 +1560,16 @@ textarea {
   background-size: cover;
   position: relative;
   overflow: hidden;
-  padding: 55px 0 40px;
+  /* padding: 260px 0 40px; */
 }
 
 #hero-area1 .contents .head-title {
-  color: #222222;
+  color: #f7f5f5;
   font-size: 42px;
   font-weight: 700;
   line-height: 60px;
   margin-bottom: 10px;
+  text-align: center;
 }
 
 #hero-area1 .contents .header-button {
